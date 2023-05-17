@@ -20,6 +20,7 @@ public class TelegramBot extends TelegramLongPollingBot {
         try {
             this.execute(sendMessage);
         } catch (TelegramApiException e) {
+            e.printStackTrace();
             throw new RuntimeException(e);
         }
     }
