@@ -1,0 +1,9 @@
+  ```
+  meta:
+    environment: jvm
+    toolchain:
+      name: maven
+      version: 17
+
+  run:
+    jarName: Starter-1.0-SNAPSHOT.jar
