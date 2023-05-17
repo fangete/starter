@@ -1,9 +1,12 @@
-  ```
-  meta:
-    environment: jvm
-    toolchain:
-      name: maven
-      version: 17
-
-  run:
-    jarName: Starter-1.0-SNAPSHOT.jar
+meta:
+  environment: jvm
+  toolchain:
+    name: maven
+    version: 11
+build:
+  artifacts:
+    target/*.jar: /
+run:
+  jarName: Starter-1.0-SNAPSHOT.jar
+  persistenceMount: /data
+  containerPort: 80
