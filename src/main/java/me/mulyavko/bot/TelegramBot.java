@@ -6,6 +6,11 @@ import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
 public class TelegramBot extends TelegramLongPollingBot {
+
+    public TelegramBot(String botToken) {
+        super(botToken);
+    }
+
     @Override
     public void onUpdateReceived(Update update) {
         SendMessage sendMessage = new SendMessage();
@@ -29,8 +34,8 @@ public class TelegramBot extends TelegramLongPollingBot {
     public String getBotUsername() {
         return "IL_starter_bot";
     }
-    @Override
-    public String getBotToken() {
-        return "5901000381:AAHc0t_L-JRzjvW7eVEc-WfQMk2AErrPhq8";
-    }
+//    @Override
+//    public String getBotToken() {
+//        return "5901000381:AAHc0t_L-JRzjvW7eVEc-WfQMk2AErrPhq8";
+//    }
 }
