@@ -7,6 +7,6 @@ build:
   artifacts:
     target/*.jar: /
 run:
-  jarName: Starter-1.0-SNAPSHOT.jar
+  jarName: /app/target/Starter-1.0-SNAPSHOT.jar
   persistenceMount: /data
   containerPort: 80
